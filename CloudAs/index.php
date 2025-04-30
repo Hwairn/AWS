@@ -1,6 +1,6 @@
 <?php
 // Connect to database
-$conn = new mysqli('labdb.cbylaqwzhjby.us-east-1.rds.amazonaws.com', 'hwaiearn', 'lab-password', '-');
+$conn = new mysqli('labdb.cbylaqwzhjby.us-east-1.rds.amazonaws.com', 'hwaiearn', 'lab-password', 'labs');
 
 $result = $conn->query("SELECT * FROM products LIMIT 3"); // Fetch 3 featured products
 ?>
