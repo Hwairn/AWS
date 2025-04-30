@@ -1,4 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+<?php
 // Connect to database
 $conn = new mysqli('labdb.cbylaqwzhjby.us-east-1.rds.amazonaws.com', 'hwaiearn', 'lab-password', 'labs');
 
