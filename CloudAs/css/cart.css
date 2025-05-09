@@ -1,0 +1,167 @@
+/* Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Make body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Make body a flex container */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Make main content grow to fill space */
+  .container {
+    flex: 1;
+  }
+  
+  /* Container */
+  .containers {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    padding: 30px;
+  }
+  
+  /* Headings */
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  /* Cart Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  /* Update Form in Quantity Column */
+  td form {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  td input[type="number"] {
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  td button {
+    background-color: #1abc9c;
+    border: none;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  td button:hover {
+    background-color: #149c84;
+  }
+  
+  /* Remove Button */
+  a.btn {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  a.btn:hover {
+    background-color: #e74c3c;
+  }
+  
+  /* Total Display */
+  h2 + h2 {
+    text-align: right;
+    margin-top: -10px;
+    font-size: 1.4rem;
+    color: #27ae60;
+  }
+  
+  /* Checkout Button */
+  form[action="checkout.php"] {
+    text-align: right;
+  }
+  
+  form[action="checkout.php"] button {
+    background-color: #1f3b57;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  form[action="checkout.php"] button:hover {
+    background-color: #365671;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    table tr {
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    table td {
+      padding-left: 50%;
+      position: relative;
+      text-align: left;
+    }
+  
+    table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      font-weight: bold;
+      color: #555;
+    }
+  
+    table th {
+      display: none;
+    }
+  }
+  
