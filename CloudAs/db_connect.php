@@ -1,6 +1,6 @@
 <?php
 
- $host = 'database-1.cbh4at2i1lny.us-east-1.rds.amazonaws.com';
+ $host = 'database-1.c4fnwjtjgkok.us-east-1.rds.amazonaws.com';
  $user = 'hwaiearn';
  $password = 'lab-password';
  $dbname = 'cloud';
