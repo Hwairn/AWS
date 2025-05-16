@@ -81,7 +81,7 @@ $result = $conn->query("SELECT * FROM products");
                         <div class="rating">★★★★★</div>
                         <p>"The graduation gown was perfect quality and arrived just in time for my convocation!"</p>
                         <div class="student-info">
-                            <img src="https://cloudasbucket.s3.us-east-1.amazonaws.com/image/student2.jpg" alt="Ahmad">
+                            <img src="https://cloudasbucket2.s3.us-east-1.amazonaws.com/image/student2.jpg" alt="Ahmad">
                             <span>Ahmad, Computer Science</span>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ $result = $conn->query("SELECT * FROM products");
                         <div class="rating">★★★★☆</div>
                         <p>"Affordable prices compared to other shops. Will recommend to my juniors!"</p>
                         <div class="student-info">
-                            <img src="https://cloudasbucket.s3.us-east-1.amazonaws.com/image/student1.jpg" alt="Mei Ling">
+                            <img src="https://cloudasbucket2.s3.us-east-1.amazonaws.com/image/student1.jpg" alt="Mei Ling">
                             <span>Mei Ling, Business Admin</span>
                         </div>
                     </div>
