@@ -1,7 +1,7 @@
 <?php
 include('/var/www/config/db_connect.php');
 
-$S3_BASE_URL = "https://cloudasbucket.s3.us-east-1.amazonaws.com/image/";
+$S3_BASE_URL = "https://cloudasbucket2.s3.us-east-1.amazonaws.com/image/";
 
 // Handle Create
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_product'])) {
